@@ -1,0 +1,18 @@
+map combat import uac;
+
+berserk slayer MAX_HEALTH = 100;
+
+loadout damage(slayer hp, slayer amount) -> slayer {
+    hp -= amount;
+    frag (hp < 0) {
+        hp = 0;
+    }
+    eject hp;
+}
+
+loadout main() -> gib {
+    slayer health = 100;
+    health = damage(health, 25);
+    uac.printf("Health: %d\n", health);
+    eject 0;
+}

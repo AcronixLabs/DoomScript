@@ -1,0 +1,6 @@
+map hell import uac;
+
+loadout main() -> gib {
+    uac.printf("HELLO FROM HELLKERNEL\n");
+    eject 0;
+}

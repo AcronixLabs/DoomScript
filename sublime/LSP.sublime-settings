@@ -1,0 +1,10 @@
+{
+    "clients": {
+        "doomscript": {
+            "enabled": true,
+            "command": ["doom-lsp"],
+            "selector": "source.doomscript",
+            "priority": 1
+        }
+    }
+}
